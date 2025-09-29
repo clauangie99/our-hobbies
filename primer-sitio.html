@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón de los Hobbies | por Claudia Heredia </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<!--Empieza la sección de body-->
+<body id="top">
+    <!--HEADER-->
+    <header>
+        <!--PRIMER ESTRUCTURA: MENU-->
+        <section class="barra-navegacion">
+            <div class="menu-container">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="#inicio">Inicio</a></li>
+                        <li><a href="#artes-visuales">Artes Visuales</a></li>
+                        <li><a href="#literatura">Literatura</a></li>
+                        <li><a href="#series-tv">Series de TV</a></li>
+                        <li><a href="#tus-hobbies">Tus Hobbies</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header> 
+    <!--HEADER-->
+
+    <!--MAIN-->
+    <main>
+        <!--PRIMERA ESTRUCTURA: TITULO-->
+        <section id="portada">
+            <div class="contenido">
+                <h1 class="titulo">El Rincón de los Hobbies</h1>
+                <p class="slogan">"Crea tu propio estilo de vida" por Claudia Heredia</p>
+            </div>
+            <div class="contenedor-botones">
+                <button class="boton"><a href="#artes-visuales">Iniciar</a></button>
+                <button class="boton-2"><a href="#tus-hobbies">Comparte tu hobbie</a></button>
+            </div>
+        </section>
+
+        <!--PRIMER HOBBIE-->
+        <section class="contenido-body">
+            <h2 id="artes-visuales">I. Artes Visuales</h2>
+            <div class="contenedor">
+                <!--COLUMNA IZQUIERDA:FOTO-->
+                <div class="columna-izquierda">
+                    <img src="imagenes/artes-visuales.jpeg" alt="Técnica Acrilico" width="100" height="100">
+                </div>
+
+                <!--COLUMNA DERECHA: TEXT, TABLA, FORM, LISTA-->
+                <div class="columna-derecha max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+                    <!--PARRAFO-->
+                    <p>Conocido por ser una actividad/acción donde poder mostrar la máxima expresión de un artista. 
+                        Su versatilidad le permite conocer diferentes técnicas, desde el uso de grafíto hasta lo digital. A continuación, presento las técnicas que más utilizo, como funcionan y cuál es mi puntaje según mi gusto.</p>
+                    
+                    <!--TABLA-->    
+                    <h3 class="estilo">Tabla Comparativa</h3>
+                    <table id="tabla-arte" class="tabla-color">
+                        <thead>
+                            <tr>
+                                <th class="celdas"> Técnica</th>
+                                <th class="celdas">¿Cómo funciona?</th>
+                                <th class="celdas">Puntaje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dibujo</td>
+                                <td>Gráfico a lápiz</td>
+                                <td> 4.5 </td>
+                            </tr>
+                            <tr>
+                                <td>Óleo</td>
+                                <td>Pigmento a base de aceite sobre lienzo</td>
+                                <td> 4.8 </td>
+                            </tr>
+                            <tr>
+                                <td>Acrílico</td>
+                                <td>Pintura de secado rápido de un material plastificado</td>
+                                <td>3.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!--FORM-->
+                    <h3 class="estilo">¡Agrega tus estilos fav a la tabla!</h3>
+                    <form id="formulario-arte" class="mb-6 form-horizontal formulario" data-target="tabla-arte">
+                        <!--Apartado para insertar tecnica-->
+                        <div class="grupo-campo">
+                            <label for="tecnica" class="block text-gray-700 font-bold mb-2">Técnica</label>
+                            <input type="text" id="tecnica" class="campo" placeholder="Nombre de técnica" required>    
+                        </div>
+
+                        <!--Apartado para insertar funcion-->
+                        <div class="grupo-campo">
+                            <label for="funcion" class="block text-gray-700 font-bold mb-2">Función</label>
+                            <input type="text" id="funcion" class="campo" placeholder="¿Cómo funciona?" required>
+                        </div>
+
+                        <!--Apartado para insertar puntaje-->
+                        <div class="grupo-campo">
+                            <label for="puntaje" class="block text-gray-700 font-bold mb-2">Puntaje</label>
+                            <input type="number" id="puntaje" class="campo" placeholder="Puntaje" step="0.1" required>
+                        </div>
+                        
+                        <button class="boton" ype="submit">Agregar</button>
+                    </form>
+                      
+                    <!--LISTA-->
+                    <h3 class="estilo">Mis herramientas favoritas</h3>
+                    <ul class="lista">
+                        <li><a>Lapiz de grafito</a></li>
+                        <li><a>Colores pastel</a></li>
+                        <li><a>Pinceles</a></li>
+                        <li><a>Óleo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--SEGUNDO HOBBIE-->
+        <section class="contenido-body">
+            <h2 id="literatura">II. Literatura</h2>
+            <div class="contenedor">
+                <!--COLUMNA IZQUIERDA:FOTO-->
+                <div class="columna-izquierda">
+                    <img src="imagenes/libros.jpeg" alt="Libro" width="100" height="100">
+                </div>
+
+                <!--COLUMNA DERECHA: TEXT, TABLA, FORM, LISTA-->
+                <div class="columna-derecha max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+                    <!--PARRAFO-->
+                    <p>Otra forma de expresión artistica conocida es la literatura, cuya expresión solo es verbal pero lleno de emociones. A cotninuación, presento los diferentes géneros que comunmente leo, su definición y cuál es mi puntaje según mi gusto</p>
+                    
+                    <!--TABLA-->    
+                    <h3 class="estilo">Tabla Comparativa</h3>
+                    <table id="tabla-literatura" class="tabla-color">
+                        <thead>
+                            <tr>
+                                <th class="celdas"> Género</th>
+                                <th class="celdas">¿De qué trata?</th>
+                                <th class="celdas">Puntaje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Narrativa</td>
+                                <td>Son géneros de novelas y relatos</td>
+                                <td> 4.7 </td>
+                            </tr>
+                            <tr>
+                                <td>Poesía</td>
+                                <td>Sonetos, usualmente románticos</td>
+                                <td> 3.5 </td>
+                            </tr>
+                            <tr>
+                                <td>Ensayo</td>
+                                <td>Libros de argumento y reflexión sobre un tema</td>
+                                <td>4.3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!--FORM-->
+                    <h3 class="estilo">¡Agrega tus géneros literarios fav a la tabla!</h3>
+                    <form id="formulario-literatura" class="mb-6 form-horizontal formulario" data-target="tabla-literatura">
+                        <!--Apartado para insertar genero-->
+                        <div class="grupo-campo">
+                            <label for="genero" class="block text-gray-700 font-bold mb-2">Género</label>
+                            <input type="text" id="genero" class="campo" placeholder="Nombre de género" required>    
+                        </div>
+
+                        <!--Apartado para insertar funcion-->
+                        <div class="grupo-campo">
+                            <label for="contenido" class="block text-gray-700 font-bold mb-2">Función</label>
+                            <input type="text" id="contenido" class="campo" placeholder="Contenido..." required>
+                        </div>
+
+                        <!--Apartado para insertar puntaje-->
+                        <div class="grupo-campo">
+                            <label for="puntaje" class="block text-gray-700 font-bold mb-2">Puntaje</label>
+                            <input type="number" id="puntaje" class="campo" placeholder="Puntaje" step="0.1" required>
+                        </div>
+                        
+                        <button class="boton" ype="submit">Agregar</button>
+                    </form>
+
+                    <!--LISTA-->
+                    <h3 class="estilo">Mis Libros favoritas</h3>
+                    <ul class="lista">
+                        <li><a>Hunger Games</a></li>
+                        <li><a>Orgullo y Prejuicio</a></li>
+                        <li><a>Odessa</a></li>
+                        <li><a>Cinder</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--TERCER HOBBIE-->
+        <section class="contenido-body">
+            <h2 id="series-tv">III. Series de TV</h2>
+            <div class="contenedor">
+                <!--COLUMNA IZQUIERDA:FOTO-->
+                <div class="columna-izquierda">
+                    <img src="imagenes/series-tv.jpeg" alt="Series TV: Friends" width="100" height="100">
+                </div>
+
+                <!--COLUMNA DERECHA: TEXT, TABLA, FORM, LISTA-->
+                <div class="columna-derecha max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+                    <!--PARRAFO-->
+                    <p>Otro hobbie imperdible y adictivo son las series. Son obras audiovisuales transmitidas en emisiones como Netflix, Disney+, Prime Video y muchas más plataformas. A continuación, presento los diferentes géneros que comunmente veo, de que trata y cual es mi puntaje según mi gusto.</p>
+
+                    <!--TABLA-->    
+                    <h3 class="estilo">Tabla Comparativa</h3>
+                    <table id="tabla-series" class="tabla-color">
+                        <thead>
+                            <tr>
+                                <th class="celdas"> Género</th>
+                                <th class="celdas">¿De qué trata?</th>
+                                <th class="celdas">Puntaje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Drama</td>
+                                <td>Enfocado en narrativas llena de conflictos, emociones intensas y desarrollo de personaje.</td>
+                                <td>4.9</td>
+                            </tr>
+                            <tr>
+                                <td>Documentales</td>
+                                <td>Presenta de manera dramatizada (o realista) temas actuales de diversos temas. </td>
+                                <td>4.3</td>
+                            </tr>
+                            <tr>
+                                <td>Reality Show</td>
+                                <td>Documentan la vida cotidiana o desafios que personas comunes o celebres se enfrentan al día.</td>
+                                <td>3.7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                     <!--FORM-->
+                     <h3 class="estilo">¡Agrega tus géneros de series fav a la tabla!</h3>
+                     <form id="formulario-literatura" class="mb-6 form-horizontal formulario" data-target="tabla-series">
+                         <!--Apartado para insertar genero-->
+                         <div class="grupo-campo">
+                             <label for="genero" class="block text-gray-700 font-bold mb-2">Género</label>
+                             <input type="text" id="genero" class="campo" placeholder="Nombre de género" required>    
+                         </div>
+ 
+                         <!--Apartado para insertar funcion-->
+                         <div class="grupo-campo">
+                             <label for="contenido" class="block text-gray-700 font-bold mb-2">Función</label>
+                             <input type="text" id="contenido" class="campo" placeholder="Contenido..." required>
+                         </div>
+ 
+                         <!--Apartado para insertar puntaje-->
+                         <div class="grupo-campo">
+                             <label for="puntaje" class="block text-gray-700 font-bold mb-2">Puntaje</label>
+                             <input type="number" id="puntaje" class="campo" placeholder="Puntaje" step="0.1" required>
+                         </div>
+                         
+                         <button class="boton" ype="submit">Agregar</button>
+                     </form>
+                    
+                    <!--LISTA-->
+                    <h3 class="estilo">Mis Series favoritas</h3>
+                    <ul class="lista">
+                        <li><a>El Mentalista</a></li>
+                        <li><a>The Office</a></li>
+                        <li><a>Friends</a></li>
+                        <li><a>Chefs Table</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--TU HOBBIE-->
+        <section class="contenido-body">
+            <h2 id="tus-hobbies">IV. Tus Hobbies</h2>
+            <div class="contenedor">
+                
+                <!--COLUMNA IZQUIERDA: FORM-->
+                <div class="columna-izquierda max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+                    <!--FORM-->
+                     <h3 class="estilo">¡Es hora de crear tu tabla de hobbies!</h3>
+                     <form id="formulario-hobbie" class="mb-6 form-horizontal formulario" data-target="tabla-hobbie">
+                         <!--Apartado para insertar hobbie-->
+                         <div class="grupo-campo">
+                             <label for="hobbie" class="block text-gray-700 font-bold mb-2">Hobbie</label>
+                             <input type="text" id="hobbie" class="campo" placeholder="Agrega tu hobbie" required>    
+                         </div>
+ 
+                         <!--Apartado para insertar funcion-->
+                         <div class="grupo-campo">
+                             <label for="contenido" class="block text-gray-700 font-bold mb-2">Función</label>
+                             <input type="text" id="contenido" class="campo" placeholder="¿De qué trata..." required>
+                         </div>
+ 
+                         <!--Apartado para insertar puntaje-->
+                         <div class="grupo-campo">
+                             <label for="puntaje" class="block text-gray-700 font-bold mb-2">Puntaje</label>
+                             <input type="number" id="puntaje" class="campo" placeholder="Puntaje" step="0.1" required>
+                         </div>
+                         
+                         <button class="boton" ype="submit">Agregar</button>
+                     </form>
+                </div>
+
+                <!--COLUMNA DERECHA: TABLA-->
+                <div class="columna-derecha">
+                    <!--TABLA-->
+                    <h3 class="estilo">Tabla de Hobbies</h3>
+                    <table id="tabla-hobbie" class="tabla-color">
+                        <thead>
+                            <tr>
+                                <th class="celdas"> Hobbie</th>
+                                <th class="celdas">¿De qué trata?</th>
+                                <th class="celdas">Puntaje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Los registros se añadirán aquí -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--LAST-->
+    <script src="script.js"></script>
+    <a href="#top" class="btn-subir" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+      </a>      
+</body>
+</html>
